@@ -1,0 +1,94 @@
+/* General Reset and Base Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    scroll-behavior: smooth; /* Smooth scrolling for a better user experience */
+}
+
+/* Parallax Image Sections */
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%; /* Default height for full-page parallax images */
+    background-attachment: fixed;
+}
+
+/* Specific Parallax Images */
+.pimg1 {
+    background-image: url(images/image1.png);
+    height: 100%; /* Full viewport height */
+}
+
+.pimg2 {
+    background-image: url(images/image2.png);
+    min-height: 400px; /* Smaller height for a non-full-page parallax */
+}
+
+.pimg3 {
+    background-image: url(images/image3.png);
+    min-height: 400px; /* Smaller height for a non-full-page parallax */
+}
+
+/* Text Overlay for Parallax Sections */
+.ptext {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%); /* Centers text vertically */
+    text-align: center;
+    color: white;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+.textBg {
+    background: #313534;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px; /* Rounded edges for a modern aesthetic */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for better visibility */
+}
+
+/* General Section Styling */
+.section {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+/* Light Section Styling */
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+/* Dark Section Styling */
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .ptext {
+        font-size: 20px; /* Adjust text size for smaller screens */
+        letter-spacing: 5px;
+    }
+
+    .textBg {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .section {
+        padding: 30px 20px; /* Adjust section padding for smaller devices */
+    }
+}
